@@ -2,7 +2,7 @@
 
 A bilingual portfolio for 王天虹 / Wang Tianhong, known as Nolan, hosted at https://nolanwangth.github.io/.
 
-The homepage introduces three directions, then education, engineering experience, and contact details. Each direction links to its own page with related projects and keywords; project lists do not repeat on the homepage. KA-RaceIng is listed separately from education as engineering experience from Season 2024.
+The homepage introduces three directions, then education, experience and collaboration, and contact details. Each direction links to its own page with related projects and keywords; project lists do not repeat on the homepage. The experience and collaboration section lists KA-RaceIng (Season 2024), AUO, Dongfeng Yueda Kia, KEYENCE, and XCMG without role descriptions. Associations are supplied by the owner and encompass collaboration, internships, and employment.
 
 ## Preview
 
@@ -45,3 +45,15 @@ School marks sit directly on the page background. The KIT dark variant preserves
 ## Names
 
 Chinese: 王天虹. Pinyin: Wang Tianhong. English name: Nolan. The website retains its original `nolan.` wordmark.
+
+## Experience marks
+
+All five marks are transparent SVGs sourced from the organizations' official websites. Their original geometry is preserved; CSS displays them in monochrome for consistent contrast in each theme. No background extraction or AI redrawing is needed.
+
+- KA-RaceIng: [official site](https://www.ka-raceing.de/), [SVG](https://www.ka-raceing.de/assets/karaceinglogo.svg).
+- AUO: [official site](https://auo.com/), [SVG](https://auo.com/template/images/common/auo-logo.svg).
+- Kia: [official brand page](https://worldwide.kia.com/en/brand/our-brand/brand-elements/brand-logo-story), black RGB SVG from its [official logo download](https://worldwide.kia.com/asset/image/brand/our-brand/brand-elements/brand-logo-story/KiaBrandLogo.zip). Listed as Dongfeng Yueda Kia to match the owner's historical experience.
+- KEYENCE: [official site](https://www.keyence.com/), [SVG](https://www.keyence.com/img/core/logo_header_01.svg).
+- XCMG: [official site](https://www.xcmgglobal.com/), [SVG](https://www.xcmgglobal.com/resources/web/img/logo.svg).
+
+These marks identify the owner's experience and do not represent an endorsement.
