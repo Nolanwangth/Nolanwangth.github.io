@@ -39,3 +39,5 @@ Small university marks identify education entries. Sources:
 - CUMT: current emblem from the [official university museum article](https://bwg.cumt.edu.cn/info/1059/3195.htm), [image](https://bwg.cumt.edu.cn/__local/6/29/E6/6FF4AEE7D0735B21C08EB1C26EF_51041430_11D2F.jpg).
 
 University marks are attributed to their institutions. KA-RaceIng links to its general homepage; Season 2024 refers to Nolan's experience, rather than the current team roster.
+
+School marks sit directly on the page background. The KIT dark variant preserves the original SVG geometry and green accent with light lettering; the CUMT mark is clipped to its circular outline.
