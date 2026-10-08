@@ -28,6 +28,8 @@ The page defaults to dark mode and English. Theme, language, and animation pause
 
 GitHub Pages publishes the `main` branch from the repository root after a push. Local commits alone do not publish changes.
 
+Styles and bilingual copy use content hashes in their HTML asset URLs. After editing `style.css` or `content.js`, update the corresponding `?v=` value in all four HTML pages to the first 12 characters of that file's SHA-256 hash. The experience section can be opened directly with `#experience`.
+
 The portrait and personal content are supplied for this portfolio; no blanket reuse license is granted for those assets. OpenVLA is labeled as a reproduction project.
 
 ## University marks
