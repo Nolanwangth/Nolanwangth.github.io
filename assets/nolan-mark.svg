@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<title>Nolan — N mark</title>
+<style>:root{--ink:#202e27;--accent:#965035}@media(prefers-color-scheme:dark){:root{--ink:#f3efe5;--accent:#edb794}}</style>
+<path d="M7 26V7L25 25V6" fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="25" cy="6" r="3" fill="var(--accent)"/>
+</svg>

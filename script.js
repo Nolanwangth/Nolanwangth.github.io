@@ -48,8 +48,8 @@ function applyLanguage() {
       element.setAttribute(attribute, copy[element.getAttribute(`data-i18n-${attribute}`)]);
     });
   }
-  document.title = language === 'zh' ? 'Nolan · Tianhong Wang — 机器人、AI 与企业系统' : 'Nolan · Tianhong Wang — Robotics, AI & Systems';
-  if (root.dataset.page) document.title = `${copy[`directions.${root.dataset.page}`]} · Nolan`;
+  document.title = copy['meta.title'];
+  if (root.dataset.page) document.title = `${copy[`directions.${root.dataset.page}`]} · ${copy['brand.pageName']}`;
   const description = copy[root.dataset.page ? `page.${root.dataset.page}Description` : 'meta.description'];
   document.querySelector('meta[name="description"]').content = description;
   document.querySelector('meta[property="og:title"]').content = document.title;

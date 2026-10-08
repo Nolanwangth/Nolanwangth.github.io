@@ -1,6 +1,6 @@
-# Tianhong Wang · Personal Website
+# Wang Tianhong · Personal Website
 
-A bilingual portfolio for Tianhong Wang (Nolan), hosted at https://nolanwangth.github.io/.
+A bilingual portfolio for 王天虹 / Wang Tianhong, known as Nolan, hosted at https://nolanwangth.github.io/.
 
 The homepage introduces three directions, then education, engineering experience, and contact details. Each direction links to its own page with related projects and keywords; project lists do not repeat on the homepage. KA-RaceIng is listed separately from education as engineering experience from Season 2024.
 
@@ -41,3 +41,14 @@ Small university marks identify education entries. Sources:
 University marks are attributed to their institutions. KA-RaceIng links to its general homepage; Season 2024 refers to Nolan's experience, rather than the current team roster.
 
 School marks sit directly on the page background. The KIT dark variant preserves the original SVG geometry and green accent with light lettering; the CUMT mark is clipped to its circular outline.
+
+## Personal identity
+
+- Chinese name: 王天虹
+- Formal English name: Wang Tianhong
+- Public name: Nolan; bilingual identity: Nolan / 王天虹 and Nolan / Wang Tianhong
+- Symbol: a continuous N stroke with one copper connection point; the same geometry is used in the header, footer, standalone mark, and favicon.
+- `assets/nolan-mark.svg`: transparent vector symbol, with light/dark system colors.
+- `assets/nolan-favicon.svg`: square icon on the brand's dark background.
+
+Chinese portrait labels, copyright, page titles, accessible brand labels, and descriptions use 王天虹. English formal-name labels use Wang Tianhong. The short English introduction uses Nolan. The N symbol is a local design draft pending a final identity direction.
