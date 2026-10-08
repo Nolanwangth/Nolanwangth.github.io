@@ -10,6 +10,8 @@
   --field: 174, 207, 188;
   --field-accent: 237, 183, 148;
   --header: #141a18ed;
+  --portrait-start: #293a30;
+  --portrait-end: #1b2821;
 }
 :root[data-theme="light"] {
   color-scheme: light;
@@ -23,6 +25,8 @@
   --field: 61, 102, 74;
   --field-accent: 143, 89, 53;
   --header: #f4f1e9ed;
+  --portrait-start: #e4e9de;
+  --portrait-end: #dce3d6;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 110px; }
@@ -71,13 +75,12 @@ h2 em { color: var(--accent); font-weight: 400; }
 .hero h1 > span, .hero h1 > em { display: block; }
 .hero h1 > em { color: var(--accent); font-weight: 400; }
 .hero-intro { max-width: 505px; margin-bottom: 25px; font-size: .98rem; line-height: 1.85; color: var(--muted); }
-.portrait { position: relative; width: min(100%, 265px); margin: 20px auto 0; animation: portrait-float 9s ease-in-out infinite; }
-.photo-mat { background: #fff; padding: 10px; transform: rotate(1deg); box-shadow: 10px 12px 0 var(--surface); }
-.portrait img { display: block; width: 100%; height: auto; }
-.portrait figcaption { padding-top: 30px; }
+.portrait { position: relative; width: min(100%, 245px); margin: 20px auto 0; }
+.photo-mat { background: linear-gradient(155deg, var(--portrait-start), var(--portrait-end)); padding: 14px 14px 0; border: 1px solid var(--line); border-radius: 2px; }
+.portrait img { display: block; width: 100%; height: auto; mask-image: url("assets/portrait-mask.svg"); mask-mode: alpha; mask-size: 100% 100%; mask-repeat: no-repeat; }
+.portrait figcaption { padding-top: 20px; }
 .portrait figcaption strong { display: block; font-size: .86rem; font-weight: 500; }
 .portrait figcaption > span { display: block; font-size: .7rem; color: var(--muted); margin-top: 3px; }
-.portrait-mark { position: absolute; right: -28px; top: -40px; color: var(--accent); font-size: 2.3rem; animation: mark-turn 32s linear infinite; }
 .hero-foot { grid-column: 1 / -1; display: flex; gap: 26px; align-items: center; margin-top: 48px; color: var(--muted); font: .62rem/1.5 "SFMono-Regular", Consolas, monospace; letter-spacing: .09em; }
 .hero-foot > a { margin-left: auto; font-size: 1.5rem; color: var(--accent); }
 #motion-toggle { padding: 4px 0; background: transparent; border: 0; border-bottom: 1px solid var(--line); font: inherit; letter-spacing: 0; }
@@ -176,8 +179,6 @@ h2 em { color: var(--accent); font-weight: 400; }
 
 /* Motion never hides content unless the observer has been initialized. */
 @keyframes glow-drift { to { transform: translate(-8%, 8%) scale(1.15); } }
-@keyframes portrait-float { 50% { transform: translateY(-7px); } }
-@keyframes mark-turn { to { transform: rotate(360deg); } }
 @keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 .hero-copy > * { animation: rise-in .75s both; }
 .hero-copy > :nth-child(2) { animation-delay: .1s; }
@@ -217,7 +218,6 @@ html.motion-paused { scroll-behavior: auto; }
   :lang(zh-CN) .hero h1 { font-size: clamp(2.8rem, 9vw, 4rem); }
   .hero-intro { max-width: 480px; font-size: .91rem; }
   .portrait { width: 220px; margin: 0 16px 0 auto; }
-  .portrait-mark { right: -16px; top: -30px; font-size: 1.8rem; }
   .hero-foot { margin-top: 4px; gap: 16px; font-size: .54rem; letter-spacing: .04em; }
   .section { padding-block: 66px; }
   h2 { font-size: clamp(2.3rem, 7vw, 3.4rem); }
