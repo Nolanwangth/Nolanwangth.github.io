@@ -14,5 +14,14 @@
       "asset": "direction-systems.webp",
       "prompt": "Use case: stylized-concept. Asset type: editorial illustration for a personal research and engineering website, one landscape image approximately 3:2. Style: sophisticated minimal sculptural 3D studio photograph, realistic material rendering, contemporary art direction, restrained research lab aesthetic. Background: flat warm ivory #ece9df, soft studio shadow. Palette: graphite, muted sage, brushed titanium, milky glass, a subtle peach/copper highlight. Subject centered with generous empty margins, entire object fully visible. No text, lettering, numbers, logos, watermark, diagrams, arrows, interface panels or frames. High quality architectural/product photography lighting, calm and elegant, not cartoonish, not science-fiction neon. Subject: a small precise architectural sculpture of interlocking modular volumes on a slim circular ceramic base, three staggered towers made of graphite metal, frosted sage glass and ivory ceramic, linked by carefully routed thin copper conduits at different levels. Suggest integrated enterprise software through architecture, no labels or schematic. Orthographic three-quarter view, balanced silhouette, refined materiality and realistic soft shadow."
     }
-  ]
+  ],
+  "edits": {
+    "method": "Built-in imagegen with transparent_background=true; alpha preserved in optimized WebP",
+    "prompt": "Edit type: background-extraction. Edit the supplied direction illustration. Remove only the warm ivory studio background and floor and make them genuinely transparent with alpha. Preserve the existing sculptural subject, exact shape, all thin copper lines, complete object, materials, framing, colors, perspective and highlights. Keep delicate neutral semitransparent contact shadow only immediately below the subject; no opaque floor or rectangular backdrop. Remove ivory background from all open holes and gaps in the object too. Clean precise edges without pale halos. The object must read well when composited over either dark forest green #141a18 or warm off-white #f4f1e9. Do not add objects, text or redesign the subject. Landscape 3:2, maintain the same full composition and margins.",
+    "assets": [
+      "direction-robotics-cutout.webp",
+      "direction-ai-cutout.webp",
+      "direction-systems-cutout.webp"
+    ]
+  }
 }

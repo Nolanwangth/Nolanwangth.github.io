@@ -2,7 +2,7 @@
 
 A bilingual portfolio for Tianhong Wang (Nolan), hosted at https://nolanwangth.github.io/.
 
-The page introduces robotics, artificial intelligence, and enterprise systems before presenting six selected projects as names and keywords. Each direction links to its own page with related projects and keywords. Education, KA-RaceIng experience, and two email contacts follow.
+The homepage introduces three directions, then education, engineering experience, and contact details. Each direction links to its own page with related projects and keywords; project lists do not repeat on the homepage. KA-RaceIng is listed separately from education as engineering experience from Season 2024.
 
 ## Preview
 
@@ -21,7 +21,7 @@ Open http://127.0.0.1:4173/. No dependencies or build step are required.
 - `preferences.js`: restore the saved theme before the stylesheet loads
 - `script.js`: theme/language controls, local preference storage, scroll reveals, and the animated canvas
 - `assets/tianhong-wang.jpg`: owner-supplied portrait, displayed at its original aspect ratio
-- `assets/direction-robotics.webp`, `assets/direction-ai.webp`, `assets/direction-systems.webp`: conceptual artwork for the three homepage directions; project rows remain text only
+- `assets/direction-robotics-cutout.webp`, `assets/direction-ai-cutout.webp`, `assets/direction-systems-cutout.webp`: transparent conceptual artwork for the three homepage directions, with CSS lighting adapted to each theme; project rows remain text only
 - `assets/artwork-prompts.json`: prompts used with the built-in imagegen tool; website images are optimized as WebP
 
 The page defaults to dark mode and English. Theme, language, and animation pause preferences are stored locally when browser storage is available and carry across the direction pages. Motion respects the system's reduced-motion setting and can be paused on every page.
@@ -29,3 +29,13 @@ The page defaults to dark mode and English. Theme, language, and animation pause
 GitHub Pages publishes the `main` branch from the repository root after a push. Local commits alone do not publish changes.
 
 The portrait and personal content are supplied for this portfolio; no blanket reuse license is granted for those assets. OpenVLA is labeled as a reproduction project.
+
+## University marks
+
+Small university marks identify education entries. Sources:
+
+- Westlake University: [official English website](https://en.westlake.edu.cn/), using its public [color logo](https://en.westlake.edu.cn/images/header_icon_color.png).
+- KIT: SVG mark from the [official homepage](https://www.kit.edu/).
+- CUMT: current emblem from the [official university museum article](https://bwg.cumt.edu.cn/info/1059/3195.htm), [image](https://bwg.cumt.edu.cn/__local/6/29/E6/6FF4AEE7D0735B21C08EB1C26EF_51041430_11D2F.jpg).
+
+University marks are attributed to their institutions. KA-RaceIng links to its general homepage; Season 2024 refers to Nolan's experience, rather than the current team roster.

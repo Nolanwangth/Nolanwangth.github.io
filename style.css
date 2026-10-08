@@ -95,7 +95,7 @@ h2 em { color: var(--accent); font-weight: 400; }
 .direction-index { display: flex; justify-content: space-between; font: .72rem monospace; color: var(--accent); margin-bottom: 28px; }
 .direction-index::after { content: "↗"; font-size: 1.1rem; transition: transform .25s; }
 .direction:hover .direction-index::after { transform: translate(3px, -3px); }
-.direction-visual { display: block; aspect-ratio: 3 / 2; width: 100%; overflow: hidden; background: #ece9df; margin-bottom: 25px; }
+.direction-visual { display: block; aspect-ratio: 3 / 2; width: 100%; overflow: hidden; background: radial-gradient(ellipse at 50% 60%, var(--glow), transparent 70%); margin-bottom: 25px; }
 .direction-visual img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2,.65,.25,1); }
 .direction:hover .direction-visual img { transform: scale(1.045); }
 .direction h3 { margin-bottom: 16px; font: normal clamp(1.2rem, 2.15vw, 2rem)/1.12 Georgia, serif; font-size: clamp(1.2rem, 8.8cqw, 2.35rem); letter-spacing: -.04em; white-space: nowrap; }
@@ -120,11 +120,17 @@ h2 em { color: var(--accent); font-weight: 400; }
 .about h2 { font-size: clamp(2.2rem, 3.5vw, 3.5rem); }
 .about-copy > p:last-child { max-width: 470px; color: var(--muted); font-size: .93rem; line-height: 1.85; }
 .background-list { align-self: center; }
-.education-row, .racing-note { display: grid; grid-template-columns: 66px minmax(0, 1fr); gap: 16px; border-top: 1px solid var(--line); padding: 23px 0; }
-.education-row > span, .racing-note > span:first-child { color: var(--accent); font: .63rem/1.5 "SFMono-Regular", Consolas, monospace; padding-top: 5px; }
+.background-label { color: var(--muted); font: .65rem/1.5 "SFMono-Regular", Consolas, monospace; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 16px; }
+.education-row, .racing-note { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 18px; border-top: 1px solid var(--line); padding: 23px 0; }
+.degree-label { display: block; color: var(--accent); font: .6rem/1.5 "SFMono-Regular", Consolas, monospace; margin-bottom: 5px; }
+.school-mark { display: grid; place-items: center; width: 56px; height: 56px; padding: 6px; background: #fff; border-radius: 4px; align-self: center; }
+.school-mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.westlake-mark img { object-fit: cover; object-position: left center; }
+.experience-group { margin-top: 36px; }
+.racing-note > span:first-child { color: var(--accent); font: .62rem/1.6 "SFMono-Regular", Consolas, monospace; padding-top: 3px; }
 .education-row h3 { font-size: 1rem; font-weight: 500; line-height: 1.45; margin-bottom: 4px; }
 .education-row p, .racing-note p { color: var(--muted); font-size: .77rem; margin-bottom: 0; }
-.racing-note { grid-template-columns: 66px minmax(0, 1fr) auto; padding-bottom: 0; }
+.racing-note { grid-template-columns: 82px minmax(0, 1fr) auto; padding-bottom: 0; }
 .racing-note strong { font-size: .83rem; font-weight: 500; }
 .racing-note > span:last-child { color: var(--accent); }
 .contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 9%; }
