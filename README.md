@@ -34,7 +34,7 @@ The portrait and personal content are supplied for this portfolio; no blanket re
 
 ## University marks
 
-Small university marks identify education entries. Sources:
+Each university logo and education entry links to its official homepage and opens in a new tab. All experience logos and names do the same; Kia links to its Chinese homepage at https://www.kia.cn/. Small university marks identify education entries. Sources:
 
 - Westlake University: [official English website](https://en.westlake.edu.cn/), using its public [color logo](https://en.westlake.edu.cn/images/header_icon_color.png).
 - KIT: SVG mark from the [official homepage](https://www.kit.edu/).

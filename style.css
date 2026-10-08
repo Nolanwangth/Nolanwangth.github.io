@@ -142,6 +142,7 @@ h2 em { color: var(--accent); font-weight: 400; }
 .company:hover .company-name { color: var(--accent); }
 
 .education-row h3 { font-size: 1rem; font-weight: 500; line-height: 1.45; margin-bottom: 4px; }
+.education-row:hover h3, .education-row:focus-visible h3 { color: var(--accent); }
 .education-row p { color: var(--muted); font-size: .77rem; margin-bottom: 0; }
 .contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 9%; }
 .contact h2 { font-size: clamp(2.5rem, 3.6vw, 3.6rem); margin: 0; }
