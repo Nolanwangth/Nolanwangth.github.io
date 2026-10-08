@@ -8,6 +8,7 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let theme = window.sitePreferences?.theme || 'dark';
 let language = window.sitePreferences?.language || 'en';
 let userPaused = false;
+try { userPaused = localStorage.getItem('nolan-motion') === 'paused'; } catch {}
 const save = (key, value) => { try { localStorage.setItem(key, value); } catch {} };
 const isPaused = () => userPaused || reducedMotion.matches;
 
@@ -49,9 +50,10 @@ function applyLanguage() {
   }
   document.title = language === 'zh' ? 'Nolan · Tianhong Wang — 机器人、AI 与企业系统' : 'Nolan · Tianhong Wang — Robotics, AI & Systems';
   if (root.dataset.page) document.title = `${copy[`directions.${root.dataset.page}`]} · Nolan`;
-  document.querySelector('meta[name="description"]').content = language === 'zh'
-    ? 'Tianhong Wang（Nolan），西湖大学人工智能方向博士生。探索机器人、人工智能与企业系统。'
-    : 'Tianhong Wang (Nolan), AI PhD student at Westlake University. Exploring robotics, artificial intelligence, and enterprise systems.';
+  const description = copy[root.dataset.page ? `page.${root.dataset.page}Description` : 'meta.description'];
+  document.querySelector('meta[name="description"]').content = description;
+  document.querySelector('meta[property="og:title"]').content = document.title;
+  document.querySelector('meta[property="og:description"]').content = description;
   renderControls();
   window.dispatchEvent(new Event('languagechange'));
 }
@@ -70,7 +72,11 @@ function syncMotionPreference() {
   renderControls();
   window.dispatchEvent(new Event('motionchange'));
 }
-motionButton?.addEventListener('click', () => { userPaused = !userPaused; syncMotionPreference(); });
+motionButton?.addEventListener('click', () => {
+  userPaused = !userPaused;
+  save('nolan-motion', userPaused ? 'paused' : 'playing');
+  syncMotionPreference();
+});
 reducedMotion.addEventListener('change', syncMotionPreference);
 applyLanguage();
 applyTheme();

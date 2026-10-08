@@ -22,7 +22,7 @@ Open http://127.0.0.1:4173/. No dependencies or build step are required.
 - `script.js`: theme/language controls, local preference storage, scroll reveals, and the animated canvas
 - `assets/tianhong-wang.jpg`: owner-supplied portrait, displayed at its original aspect ratio
 
-The page defaults to dark mode and English. Theme and language preferences are stored locally when browser storage is available. Motion respects the system's reduced-motion setting and can be paused from the opening section.
+The page defaults to dark mode and English. Theme, language, and animation pause preferences are stored locally when browser storage is available and carry across the direction pages. Motion respects the system's reduced-motion setting and can be paused on every page.
 
 GitHub Pages publishes the `main` branch from the repository root after a push. Local commits alone do not publish changes.
 

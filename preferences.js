@@ -7,5 +7,6 @@
     if (localStorage.getItem('nolan-language') === 'zh') language = 'zh';
   } catch { /* The page remains usable when browser storage is unavailable. */ }
   document.documentElement.dataset.theme = theme;
+  document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
   window.sitePreferences = { theme, language };
 })();
