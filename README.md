@@ -22,7 +22,7 @@ Open http://127.0.0.1:4173. No dependencies or build step required.
 
 - `index.html`: profile, education, experience, and selected projects
 - `style.css`: responsive layout and visual styling
-- `script.js`: category filtering and user-controlled demo playback
+- `script.js`: category filtering, demo playback, and page motion
 - `projects.json`: project catalog; run `python3 scripts/render_projects.py` after edits
 - `assets/tianhong-wang.jpg`: owner-supplied portrait
 
