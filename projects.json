@@ -1,0 +1,131 @@
+[
+  {
+    "repo": "dinoflow_repo",
+    "title": "DinoFlow",
+    "category": "robotics",
+    "kind": "Robot action policy",
+    "description": "A DINOv3 and conditional flow-matching policy with three-camera input, LeRobot data loading, training, and inference serving.",
+    "tags": [
+      "DINOv3",
+      "LoRA",
+      "LeRobot"
+    ]
+  },
+  {
+    "repo": "openvla",
+    "title": "OpenVLA",
+    "category": "robotics",
+    "kind": "Reproduction & optimization",
+    "description": "Reproducing a vision-language-action model, with LoRA fine-tuning, LIBERO simulation experiments, and quantized deployment.",
+    "tags": [
+      "VLA",
+      "LIBERO",
+      "PyTorch"
+    ]
+  },
+  {
+    "repo": "lewm_repo",
+    "title": "LeWorldModel",
+    "category": "robotics",
+    "kind": "Research adaptation",
+    "description": "A LeWorldModel-based repository exploring JEPA world models for visuo-tactile action planning. The original model and paper belong to the upstream authors.",
+    "tags": [
+      "JEPA",
+      "World Model"
+    ]
+  },
+  {
+    "repo": "minillm",
+    "title": "MiniLLM",
+    "category": "models",
+    "kind": "From scratch",
+    "description": "A compact GPT in pure PyTorch, covering byte-level tokenization, pretraining, supervised fine-tuning, and text generation.",
+    "tags": [
+      "Transformer",
+      "SFT",
+      "PyTorch"
+    ]
+  },
+  {
+    "repo": "ai-from-scratch",
+    "title": "AI From Scratch",
+    "category": "models",
+    "kind": "Learning implementations",
+    "description": "Step-by-step implementations spanning PyTorch fundamentals, Transformers, diffusion, reinforcement learning, robot policies, and agent loops.",
+    "tags": [
+      "Diffusion",
+      "RL",
+      "Transformer"
+    ]
+  },
+  {
+    "repo": "aibot_repo",
+    "title": "Xiaoling \u00b7 AI Companion",
+    "category": "tools",
+    "kind": "Desktop AI application",
+    "description": "A macOS desktop companion with voice conversations, visual understanding, pixel expressions, long-term memory, and a local context console.",
+    "tags": [
+      "Voice",
+      "Vision",
+      "Python"
+    ]
+  },
+  {
+    "repo": "claude-obsidian-llm-wiki",
+    "title": "Claude + Obsidian LLM Wiki",
+    "category": "tools",
+    "kind": "Local-first knowledge base",
+    "description": "A Markdown-first knowledge template combining Claude Code, BGE-M3 semantic retrieval, SQLite full-text search, and Obsidian.",
+    "tags": [
+      "Obsidian",
+      "BGE-M3",
+      "SQLite"
+    ]
+  },
+  {
+    "repo": "wx_dev",
+    "title": "AI Signal",
+    "category": "tools",
+    "kind": "WeChat mini program",
+    "description": "Structured interpretations of AI news and paper abstracts, with follow-up questions and a FastAPI backend.",
+    "tags": [
+      "WeChat",
+      "FastAPI",
+      "DeepSeek"
+    ]
+  },
+  {
+    "repo": "tbcrm_repo",
+    "title": "TBCRM",
+    "category": "tools",
+    "kind": "Application project",
+    "description": "The TBCRM project repository. Its public README currently provides a basic project introduction and identifies dev as the development branch.",
+    "tags": [
+      "Application",
+      "dev"
+    ]
+  },
+  {
+    "repo": "awesome-robotics-papers",
+    "title": "Awesome Robotics Papers",
+    "category": "reading",
+    "kind": "Curated reading",
+    "description": "A collection of robotics and embodied AI papers, organized by conference and paper category for research discovery.",
+    "tags": [
+      "Robotics",
+      "Paper Collection"
+    ]
+  },
+  {
+    "repo": "Awesome-LLM-Robotics",
+    "title": "Awesome LLM Robotics",
+    "category": "reading",
+    "kind": "Fork \u00b7 Research collection",
+    "description": "An upstream reading collection on large language and multimodal models for robotics and reinforcement learning.",
+    "tags": [
+      "LLM",
+      "Robotics",
+      "Fork"
+    ]
+  }
+]
