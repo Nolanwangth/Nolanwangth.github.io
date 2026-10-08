@@ -1,53 +1,102 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nolan · Tianhong Wang — Robotics & AI</title>
-<meta name="description" content="Tianhong Wang (Nolan), first-year PhD student in Artificial Intelligence at Westlake University. Robotics, world models, language models, and practical AI tools.">
-<meta name="theme-color" content="#151b19"><meta property="og:title" content="Nolan · Tianhong Wang"><meta property="og:description" content="Building intelligence that connects models to the physical world. Robotics and AI projects by Tianhong Wang."><meta property="og:type" content="website"><meta property="og:url" content="https://nolanwangth.github.io/">
-<link rel="canonical" href="https://nolanwangth.github.io/">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d241f'/%3E%3Cpath d='M18 46V18h6l16 22V18h6v28h-6L24 24v22z' fill='%23f4f0e8'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nolan · Tianhong Wang — Robotics, AI & Systems</title>
+  <meta name="description" content="Tianhong Wang (Nolan), AI PhD student at Westlake University. Exploring robotics, artificial intelligence, and enterprise systems.">
+  <meta name="theme-color" content="#141a18">
+  <meta property="og:title" content="Nolan · Tianhong Wang">
+  <meta property="og:description" content="Exploring robotics, artificial intelligence, and enterprise systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nolanwangth.github.io/">
+  <link rel="canonical" href="https://nolanwangth.github.io/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141a18'/%3E%3Cpath d='M18 46V18h6l16 22V18h6v28h-6L24 24v22z' fill='%23edb794'/%3E%3C/svg%3E">
+  <script src="preferences.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to main content</a>
-<div class="scroll-progress" aria-hidden="true"></div>
-<header class="header"><a class="brand" href="#" aria-label="Nolan home">nolan<span class="brand-dot">.</span></a><nav aria-label="Main navigation"><a href="#selected">Selected work</a><a href="#projects">Projects</a><a href="#background">Background</a><a href="#about">About</a></nav><a class="github-nav" href="https://github.com/Nolanwangth" target="_blank" rel="noopener noreferrer">GitHub <span class="mono">/ 01</span></a></header>
-<main id="main">
-<div class="hero-shell">
-<section class="hero wrap" aria-labelledby="hero-title">
-<canvas class="hero-field" aria-hidden="true"></canvas>
-<div class="hero-copy"><p class="eyebrow">TIANHONG WANG · PERSONAL PORTFOLIO</p><h1 id="hero-title">Hi, I'm<br><span>Nolan.</span></h1><h2>From learning models<br>to intelligent machines.</h2><p class="intro">I'm Tianhong Wang, a first-year PhD student in Artificial Intelligence at Westlake University. I explore robot learning, world models, and AI tools built for everyday use.</p><div class="hero-links"><a class="button" href="#selected">Explore my work</a><a class="text-link" href="#about">About me</a></div><p class="affiliation"><span class="affiliation-mark">WESTLAKE</span> Department of Artificial Intelligence</p></div>
-<figure class="portrait"><div class="portrait-top mono"><span>RESEARCHER / BUILDER</span><span>HANGZHOU, CN</span></div><img src="assets/tianhong-wang.jpg" alt="Portrait of Tianhong Wang" width="598" height="837" fetchpriority="high"><figcaption><strong>Tianhong Wang</strong><span>PhD Student · Artificial Intelligence</span><a href="https://en-soe.westlake.edu.cn/OurSchool/departmentcenter/departmentAI/" target="_blank" rel="noopener noreferrer">Westlake University</a></figcaption></figure>
-</section>
-</div>
-<div class="focus-strip"><div class="wrap"><span class="mono">AREAS OF EXPLORATION</span><span>Embodied AI</span><span>World Models</span><span>LLMs</span><span>AI Tools</span></div></div>
-<section class="section wrap" id="selected"><div class="section-head"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Ideas, put into practice<span class="accent">.</span></h2></div><span class="section-note">Research experiments. Working implementations.</span></div>
-<div class="featured-grid">
-<article class="feature feature-main"><div class="feature-top"><span class="pill">Robot learning</span><span class="mono">01</span></div><h3>DinoFlow</h3><p>Connecting DINOv3 visual features to robot actions with conditional flow matching.</p><div class="pipeline" aria-label="DinoFlow model pipeline"><span>Three camera views</span><i>↓</i><span>DINOv3 + LoRA</span><i>↓</i><span>Action DiT</span><i>↓</i><span class="pipeline-result">50 steps × 26 action dimensions</span></div><div class="feature-bottom"><span class="mono">PyTorch / LeRobot / Flow Matching</span><a href="https://github.com/Nolanwangth/dinoflow_repo" target="_blank" rel="noopener noreferrer">View DinoFlow</a></div></article>
-<article class="feature"><div class="feature-top"><span class="pill">From scratch</span><span class="mono">02</span></div><h3>MiniLLM</h3><p>A small, complete GPT in pure PyTorch. From attention to pretraining, supervised fine-tuning, and text generation.</p><div class="code-note mono"><span>tokens</span> · attention · logits<br><strong>learn by building.</strong></div><div class="feature-bottom"><span class="mono">PyTorch / Transformer / SFT</span><a href="https://github.com/Nolanwangth/minillm" target="_blank" rel="noopener noreferrer">View MiniLLM</a></div></article>
-<article class="feature"><div class="feature-top"><span class="pill">Local-first knowledge</span><span class="mono">03</span></div><h3>LLM Wiki</h3><p>A conversational, local-first knowledge base. Markdown for storage, semantic and full-text search for retrieval, and Obsidian for connected thinking.</p><div class="code-note mono"><span>Markdown</span> as the source of truth.<br><strong>your knowledge, connected.</strong></div><div class="feature-bottom"><span class="mono">Claude Code / BGE-M3 / SQLite</span><a href="https://github.com/Nolanwangth/claude-obsidian-llm-wiki" target="_blank" rel="noopener noreferrer">View LLM Wiki</a></div></article>
-</div><div class="experiment-row"><div class="experiment-copy"><p class="eyebrow">IN THE SIMULATOR</p><h3>Language. Vision. Action.</h3><p>Exploring how a vision-language-action model translates instructions into robot behavior. A recorded grasping example from my OpenVLA reproduction work.</p><a class="text-link" href="https://github.com/Nolanwangth/openvla" target="_blank" rel="noopener noreferrer">Explore the OpenVLA repository</a></div><figure class="demo"><div class="demo-top mono"><span>EXPERIMENT / OPENVLA</span><span>01 — ROBOTICS</span></div><div class="demo-image"><img id="demo-image" src="assets/openvla-still.png" alt="OpenVLA performing a robotic grasping task in the LIBERO simulation environment" width="512" height="512"><button id="demo-toggle" class="demo-toggle" type="button" aria-pressed="false">Play demo</button><span class="image-label">VISION · LANGUAGE · ACTION</span></div><figcaption><div><strong>Turning language into action.</strong><span>OpenVLA reproduction · LIBERO simulation</span></div><a href="https://github.com/Nolanwangth/openvla" target="_blank" rel="noopener noreferrer">View experiment</a></figcaption></figure></div></section>
-<section class="section wrap" id="projects"><div class="section-head"><div><p class="eyebrow">02 / PROJECT INDEX</p><h2>A map of my work<span class="accent">.</span></h2></div><p id="result-count" class="section-note" aria-live="polite">11 public repositories</p></div>
-<div class="filters" role="group" aria-label="Filter projects by area"><button type="button" data-filter="all" aria-pressed="true">All <span>11</span></button><button type="button" data-filter="robotics" aria-pressed="false">Robotics & Embodied AI <span>3</span></button><button type="button" data-filter="models" aria-pressed="false">Models & Learning <span>2</span></button><button type="button" data-filter="tools" aria-pressed="false">AI Apps & Tools <span>4</span></button><button type="button" data-filter="reading" aria-pressed="false">Reading & Resources <span>2</span></button></div>
-<div class="project-grid" id="project-grid">
-<article class="project" data-category="robotics"><div class="project-top"><span>Robot action policy</span><span class="mono">01</span></div><h3><a href="https://github.com/Nolanwangth/dinoflow_repo" target="_blank" rel="noopener noreferrer">DinoFlow</a></h3><p>A DINOv3 and conditional flow-matching policy with three-camera input, LeRobot data loading, training, and inference serving.</p><div class="tags"><span>DINOv3</span><span>LoRA</span><span>LeRobot</span></div></article>
-<article class="project" data-category="robotics"><div class="project-top"><span>Reproduction &amp; optimization</span><span class="mono">02</span></div><h3><a href="https://github.com/Nolanwangth/openvla" target="_blank" rel="noopener noreferrer">OpenVLA</a></h3><p>Reproducing a vision-language-action model, with LoRA fine-tuning, LIBERO simulation experiments, and quantized deployment.</p><div class="tags"><span>VLA</span><span>LIBERO</span><span>PyTorch</span></div></article>
-<article class="project" data-category="robotics"><div class="project-top"><span>Research adaptation</span><span class="mono">03</span></div><h3><a href="https://github.com/Nolanwangth/lewm_repo" target="_blank" rel="noopener noreferrer">LeWorldModel</a></h3><p>A LeWorldModel-based repository exploring JEPA world models for visuo-tactile action planning. The original model and paper belong to the upstream authors.</p><div class="tags"><span>JEPA</span><span>World Model</span></div></article>
-<article class="project" data-category="models"><div class="project-top"><span>From scratch</span><span class="mono">04</span></div><h3><a href="https://github.com/Nolanwangth/minillm" target="_blank" rel="noopener noreferrer">MiniLLM</a></h3><p>A compact GPT in pure PyTorch, covering byte-level tokenization, pretraining, supervised fine-tuning, and text generation.</p><div class="tags"><span>Transformer</span><span>SFT</span><span>PyTorch</span></div></article>
-<article class="project" data-category="models"><div class="project-top"><span>Learning implementations</span><span class="mono">05</span></div><h3><a href="https://github.com/Nolanwangth/ai-from-scratch" target="_blank" rel="noopener noreferrer">AI From Scratch</a></h3><p>Step-by-step implementations spanning PyTorch fundamentals, Transformers, diffusion, reinforcement learning, robot policies, and agent loops.</p><div class="tags"><span>Diffusion</span><span>RL</span><span>Transformer</span></div></article>
-<article class="project" data-category="tools"><div class="project-top"><span>Desktop AI application</span><span class="mono">06</span></div><h3><a href="https://github.com/Nolanwangth/aibot_repo" target="_blank" rel="noopener noreferrer">Xiaoling · AI Companion</a></h3><p>A macOS desktop companion with voice conversations, visual understanding, pixel expressions, long-term memory, and a local context console.</p><div class="tags"><span>Voice</span><span>Vision</span><span>Python</span></div></article>
-<article class="project" data-category="tools"><div class="project-top"><span>Local-first knowledge base</span><span class="mono">07</span></div><h3><a href="https://github.com/Nolanwangth/claude-obsidian-llm-wiki" target="_blank" rel="noopener noreferrer">Claude + Obsidian LLM Wiki</a></h3><p>A Markdown-first knowledge template combining Claude Code, BGE-M3 semantic retrieval, SQLite full-text search, and Obsidian.</p><div class="tags"><span>Obsidian</span><span>BGE-M3</span><span>SQLite</span></div></article>
-<article class="project" data-category="tools"><div class="project-top"><span>WeChat mini program</span><span class="mono">08</span></div><h3><a href="https://github.com/Nolanwangth/wx_dev" target="_blank" rel="noopener noreferrer">AI Signal</a></h3><p>Structured interpretations of AI news and paper abstracts, with follow-up questions and a FastAPI backend.</p><div class="tags"><span>WeChat</span><span>FastAPI</span><span>DeepSeek</span></div></article>
-<article class="project" data-category="tools"><div class="project-top"><span>Application project</span><span class="mono">09</span></div><h3><a href="https://github.com/Nolanwangth/tbcrm_repo" target="_blank" rel="noopener noreferrer">TBCRM</a></h3><p>The TBCRM project repository. Its public README currently provides a basic project introduction and identifies dev as the development branch.</p><div class="tags"><span>Application</span><span>dev</span></div></article>
-<article class="project" data-category="reading"><div class="project-top"><span>Curated reading</span><span class="mono">10</span></div><h3><a href="https://github.com/Nolanwangth/awesome-robotics-papers" target="_blank" rel="noopener noreferrer">Awesome Robotics Papers</a></h3><p>A collection of robotics and embodied AI papers, organized by conference and paper category for research discovery.</p><div class="tags"><span>Robotics</span><span>Paper Collection</span></div></article>
-<article class="project" data-category="reading"><div class="project-top"><span>Fork · Research collection</span><span class="mono">11</span></div><h3><a href="https://github.com/Nolanwangth/Awesome-LLM-Robotics" target="_blank" rel="noopener noreferrer">Awesome LLM Robotics</a></h3><p>An upstream reading collection on large language and multimodal models for robotics and reinforcement learning.</p><div class="tags"><span>LLM</span><span>Robotics</span><span>Fork</span></div></article>
-</div>
-<p class="index-footnote">Curated from public repositories and READMEs · Snapshot: October 8, 2026 · Adaptations and reading collections are labeled.</p>
-</section>
-<section class="section wrap background" id="background"><div class="section-head"><div><p class="eyebrow">03 / BACKGROUND</p><h2>Learning across disciplines<span class="accent">.</span></h2></div><span class="section-note">Education & engineering experience</span></div>
-<div class="background-grid"><div class="education"><h3 class="background-label">EDUCATION</h3><article class="timeline-item"><span class="timeline-mark mono">NOW</span><div><h4><a href="https://en.westlake.edu.cn/" target="_blank" rel="noopener noreferrer">Westlake University</a></h4><p>PhD Student · First Year</p><a class="subtle-link" href="https://en-soe.westlake.edu.cn/OurSchool/departmentcenter/departmentAI/" target="_blank" rel="noopener noreferrer">Department of Artificial Intelligence</a></div></article><article class="timeline-item"><span class="timeline-mark mono">MSc</span><div><h4><a href="https://www.kit.edu/english/" target="_blank" rel="noopener noreferrer">Karlsruhe Institute of Technology</a></h4><p>Master's Degree</p><span class="education-detail">Mechatronics and Information Technology</span></div></article><article class="timeline-item"><span class="timeline-mark mono">UG</span><div><h4><a href="https://www.cumt.edu.cn/" target="_blank" rel="noopener noreferrer">China University of Mining and Technology</a></h4><p>Bachelor's Degree</p></div></article></div>
-<article class="racing"><div class="feature-top"><span class="pill">Formula Student</span><span class="mono">JOINED 2024</span></div><h3>KA-RaceIng<span class="accent">.</span></h3><p class="racing-role">Autonomous System<br><strong>Velocity Estimation</strong></p><p>Alongside my studies at KIT, I joined KA-RaceIng in 2024, contributing to velocity estimation in the Formula Student team's Autonomous System subteam.</p><div class="racing-bottom"><a href="https://www.ka-raceing.de/team.html" target="_blank" rel="noopener noreferrer">View the team roster</a><span>Select Season 2024 · Tianhong Wang</span></div></article></div></section>
-<section class="about-section" id="about"><div class="wrap about"><div><p class="eyebrow">04 / ABOUT</p><h2>Understand it.<br>Build it.<br><span>Make it work.</span></h2></div><div class="about-copy"><p class="about-name">Tianhong Wang <span>/ Nolan</span></p><p>I am a first-year PhD student in the Department of Artificial Intelligence at Westlake University, with a master's degree from KIT and a bachelor's degree from China University of Mining and Technology.</p><p>My projects explore how robots learn actions from visual observations, how models represent the world, and how AI can support everyday knowledge and interaction.</p><p>From implementing Transformers to exploring robot policies and building local AI tools, I learn by making ideas concrete.</p><div class="about-tags"><span>Robot Learning</span><span>World Models</span><span>Local-first AI</span></div><a class="button" href="https://github.com/Nolanwangth" target="_blank" rel="noopener noreferrer">Find me on GitHub</a></div></div></section>
-</main><footer class="wrap footer"><a class="brand" href="#">nolan<span class="brand-dot">.</span></a><span>© 2026 Tianhong Wang</span><span class="mono">BUILT WITH CURIOSITY.</span><a href="#main">Back to top</a></footer>
-</body></html>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#main" aria-label="Nolan home">nolan<span>.</span></a>
+      <nav aria-label="Main navigation" data-i18n-aria-label="nav.label">
+        <a href="#directions" data-i18n="nav.directions">Directions</a>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="preferences" aria-label="Display preferences" data-i18n-aria-label="preferences">
+        <button id="theme-toggle" type="button" aria-label="Switch to light theme"><span aria-hidden="true">☼</span><span class="control-label">Light</span></button>
+        <button id="language-toggle" type="button" aria-label="切换到中文" lang="zh-CN">中文</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-field" aria-hidden="true"></canvas>
+      <div class="hero-inner wrap">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.identity">TIANHONG WANG / NOLAN</p>
+          <h1 id="hero-title"><span data-i18n="hero.line1">From ideas</span><span data-i18n="hero.line2">to real-world</span><em data-i18n="hero.line3">intelligence.</em></h1>
+          <p class="hero-intro" data-i18n="hero.intro">I'm Nolan, an AI PhD student at Westlake University. I explore how intelligence learns, moves, and becomes useful in everyday systems.</p>
+          <a class="text-link" href="#directions"><span data-i18n="hero.explore">Explore my directions</span><span aria-hidden="true">↘</span></a>
+        </div>
+        <figure class="portrait">
+          <div class="photo-mat"><img src="assets/tianhong-wang.jpg" alt="Portrait of Tianhong Wang" data-i18n-alt="portrait.alt" width="598" height="837" fetchpriority="high"></div>
+          <figcaption><strong>Tianhong Wang</strong><span data-i18n="portrait.caption">PhD student · Westlake University</span></figcaption>
+          <span class="portrait-mark" aria-hidden="true">✳</span>
+        </figure>
+        <div class="hero-foot"><span data-i18n="hero.location">BASED IN HANGZHOU, CHINA</span><button id="motion-toggle" type="button" aria-pressed="false" data-i18n="motion.pause">Pause motion</button><a href="#directions" aria-label="Scroll to directions" data-i18n-aria-label="hero.scroll">↓</a></div>
+      </div>
+    </section>
+
+    <section class="section directions wrap" id="directions" aria-labelledby="directions-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="directions.eyebrow">01 / WHAT I EXPLORE</p>
+        <h2 id="directions-title"><span data-i18n="directions.title1">One curiosity.</span><em data-i18n="directions.title2">Three directions.</em></h2>
+        <p class="section-intro" data-i18n="directions.intro">From understanding the physical world to building tools that people can use.</p>
+      </div>
+      <div class="direction-grid">
+        <article class="direction reveal"><span class="direction-index">01</span><h3 data-i18n="directions.robotics">Robotics</h3><p data-i18n="directions.roboticsText">Learning to see, understand, and act in the physical world. My interests include robot learning, embodied AI, and world models.</p><span class="direction-note" data-i18n="directions.roboticsNote">Perception → Action</span></article>
+        <article class="direction reveal"><span class="direction-index">02</span><h3 data-i18n="directions.ai">Artificial intelligence</h3><p data-i18n="directions.aiText">Understanding models by building them, then turning that understanding into useful AI tools and natural interactions.</p><span class="direction-note" data-i18n="directions.aiNote">Models → Tools</span></article>
+        <article class="direction reveal"><span class="direction-index">03</span><h3 data-i18n="directions.systems">Enterprise systems</h3><p data-i18n="directions.systemsText">Connecting software to the way people work. I explore business applications, knowledge systems, and practical workflows.</p><span class="direction-note" data-i18n="directions.systemsNote">Ideas → Everyday use</span></article>
+      </div>
+    </section>
+
+    <section class="section work wrap" id="work" aria-labelledby="work-title">
+      <div class="work-heading reveal"><div><p class="eyebrow" data-i18n="work.eyebrow">02 / SELECTED WORK</p><h2 id="work-title" data-i18n="work.title">A few things I've built.</h2></div><a class="text-link" href="https://github.com/Nolanwangth" target="_blank" rel="noopener noreferrer"><span data-i18n="work.more">More on GitHub</span><span aria-hidden="true">↗</span></a></div>
+      <div class="work-list">
+        <a class="work-row reveal" href="https://github.com/Nolanwangth/dinoflow_repo" target="_blank" rel="noopener noreferrer"><span class="work-category" data-i18n="work.robotics">Robotics</span><div><h3>DinoFlow</h3><p data-i18n="work.dinoflow">Visual learning · Robot actions</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="work-row reveal" href="https://github.com/Nolanwangth/openvla" target="_blank" rel="noopener noreferrer"><span class="work-category" data-i18n="work.robotics">Robotics</span><div><h3>OpenVLA</h3><p data-i18n="work.openvla">Reproduction · Vision-language-action</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="work-row reveal" href="https://github.com/Nolanwangth/minillm" target="_blank" rel="noopener noreferrer"><span class="work-category" data-i18n="work.models">AI models</span><div><h3>MiniLLM</h3><p data-i18n="work.minillm">From scratch · Language models</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="work-row reveal" href="https://github.com/Nolanwangth/claude-obsidian-llm-wiki" target="_blank" rel="noopener noreferrer"><span class="work-category" data-i18n="work.tools">AI tools</span><div><h3>LLM Wiki</h3><p data-i18n="work.wiki">Knowledge base · Local AI</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="work-row reveal" href="https://github.com/Nolanwangth/aibot_repo" target="_blank" rel="noopener noreferrer"><span class="work-category" data-i18n="work.tools">AI tools</span><div><h3 data-i18n="work.xiaolingTitle">Xiaoling</h3><p data-i18n="work.xiaoling">Voice · Vision · Memory</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="work-row reveal" href="https://github.com/Nolanwangth/tbcrm_repo" target="_blank" rel="noopener noreferrer"><span class="work-category" data-i18n="work.systems">Systems</span><div><h3>TBCRM</h3><p data-i18n="work.tbcrm">Enterprise applications · Business systems</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section about wrap" id="about" aria-labelledby="about-title">
+      <div class="about-copy reveal"><p class="eyebrow" data-i18n="about.eyebrow">03 / A LITTLE CONTEXT</p><h2 id="about-title"><span data-i18n="about.title1">An engineer's curiosity.</span><em data-i18n="about.title2">A researcher's mindset.</em></h2><p data-i18n="about.intro">My path runs from mechanical engineering to mechatronics and now artificial intelligence. I like understanding how things work—and making ideas work in practice.</p></div>
+      <div class="background-list reveal" id="background">
+        <article class="education-row"><span data-i18n="about.now">NOW</span><div><h3 data-i18n="about.westlake">Westlake University</h3><p data-i18n="about.phd">PhD student · Artificial Intelligence</p></div></article>
+        <article class="education-row"><span data-i18n="about.msc">MSc</span><div><h3 data-i18n="about.kit">Karlsruhe Institute of Technology</h3><p data-i18n="about.master">Mechatronics and Information Technology</p></div></article>
+        <article class="education-row"><span data-i18n="about.bachelorLabel">BACHELOR</span><div><h3 data-i18n="about.cumt">China University of Mining and Technology</h3><p data-i18n="about.bachelor">Mechanical Engineering</p></div></article>
+        <a class="racing-note" href="https://www.ka-raceing.de/team.html" target="_blank" rel="noopener noreferrer"><span>2024</span><div><strong>KA-RaceIng</strong><p data-i18n="about.racing">Autonomous System · Velocity Estimation</p></div><span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section contact wrap" id="contact" aria-labelledby="contact-title">
+      <div class="reveal"><p class="eyebrow" data-i18n="contact.eyebrow">04 / GET IN TOUCH</p><h2 id="contact-title"><span data-i18n="contact.title1">Good ideas start</span><em data-i18n="contact.title2">with a conversation.</em></h2></div>
+      <address class="contact-list reveal">
+        <a href="mailto:nolanwangth@gmail.com"><span data-i18n="contact.personal">Personal</span><strong>nolanwangth@gmail.com</strong><span aria-hidden="true">↗</span></a>
+        <a href="mailto:wangtianhong@westlake.edu.cn"><span data-i18n="contact.academic">Academic</span><strong>wangtianhong@westlake.edu.cn</strong><span aria-hidden="true">↗</span></a>
+      </address>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#main">nolan<span>.</span></a><span>© 2026 Tianhong Wang</span><a href="https://github.com/Nolanwangth" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#main" data-i18n="footer.top">Back to top ↑</a></footer>
+</body>
+</html>
