@@ -77,7 +77,10 @@ window.siteContent = {
     "meta.description": "Tianhong Wang (Nolan), AI PhD student at Westlake University. Research and engineering in robotics, artificial intelligence, and enterprise software.",
     "page.roboticsDescription": "Robot learning, embodied AI, and world models. Selected robotics projects by Tianhong Wang (Nolan).",
     "page.aiDescription": "Language models, AI tools, and human–AI interaction. Selected artificial intelligence projects by Tianhong Wang (Nolan).",
-    "page.systemsDescription": "Enterprise software, knowledge systems, and business workflows. Selected software projects by Tianhong Wang (Nolan)."
+    "page.systemsDescription": "Enterprise software, knowledge systems, and business workflows. Selected software projects by Tianhong Wang (Nolan).",
+    "art.robotics": "A sculptural robotic arm",
+    "art.ai": "A flowing sculpture of interwoven filaments",
+    "art.systems": "A modular architectural sculpture"
   },
   "zh": {
     "skip": "跳到正文",
@@ -156,6 +159,9 @@ window.siteContent = {
     "meta.description": "Tianhong Wang（Nolan），西湖大学人工智能方向博士生，关注机器人、人工智能与企业软件的研究和工程实践。",
     "page.roboticsDescription": "机器人学习、具身智能与世界模型。Tianhong Wang（Nolan）的机器人方向精选项目。",
     "page.aiDescription": "语言模型、AI 工具与人机交互。Tianhong Wang（Nolan）的人工智能方向精选项目。",
-    "page.systemsDescription": "企业软件、知识系统与业务流程。Tianhong Wang（Nolan）的企业软件精选项目。"
+    "page.systemsDescription": "企业软件、知识系统与业务流程。Tianhong Wang（Nolan）的企业软件精选项目。",
+    "art.robotics": "机器人方向主题视觉：精密机械臂",
+    "art.ai": "人工智能方向主题视觉：交织的流动线束",
+    "art.systems": "企业系统方向主题视觉：互联的模块建筑"
   }
 };

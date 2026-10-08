@@ -21,6 +21,8 @@ Open http://127.0.0.1:4173/. No dependencies or build step are required.
 - `preferences.js`: restore the saved theme before the stylesheet loads
 - `script.js`: theme/language controls, local preference storage, scroll reveals, and the animated canvas
 - `assets/tianhong-wang.jpg`: owner-supplied portrait, displayed at its original aspect ratio
+- `assets/direction-robotics.webp`, `assets/direction-ai.webp`, `assets/direction-systems.webp`: conceptual artwork for the three homepage directions; project rows remain text only
+- `assets/artwork-prompts.json`: prompts used with the built-in imagegen tool; website images are optimized as WebP
 
 The page defaults to dark mode and English. Theme, language, and animation pause preferences are stored locally when browser storage is available and carry across the direction pages. Motion respects the system's reduced-motion setting and can be paused on every page.
 

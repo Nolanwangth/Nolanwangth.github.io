@@ -95,6 +95,9 @@ h2 em { color: var(--accent); font-weight: 400; }
 .direction-index { display: flex; justify-content: space-between; font: .72rem monospace; color: var(--accent); margin-bottom: 28px; }
 .direction-index::after { content: "↗"; font-size: 1.1rem; transition: transform .25s; }
 .direction:hover .direction-index::after { transform: translate(3px, -3px); }
+.direction-visual { display: block; aspect-ratio: 3 / 2; width: 100%; overflow: hidden; background: #ece9df; margin-bottom: 25px; }
+.direction-visual img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2,.65,.25,1); }
+.direction:hover .direction-visual img { transform: scale(1.045); }
 .direction h3 { margin-bottom: 16px; font: normal clamp(1.2rem, 2.15vw, 2rem)/1.12 Georgia, serif; font-size: clamp(1.2rem, 8.8cqw, 2.35rem); letter-spacing: -.04em; white-space: nowrap; }
 .direction:hover h3 { color: var(--accent); }
 .direction:focus-visible h3 { color: var(--accent); }
@@ -212,10 +215,12 @@ html.motion-paused { scroll-behavior: auto; }
   .section-heading h2 { margin-bottom: 24px; }
   .direction-grid { grid-template-columns: 1fr; gap: 32px; margin-top: 36px; }
   .direction { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 10px 16px; }
-  .direction-index { grid-row: 1 / 4; margin: 7px 0 0; flex-direction: column; justify-content: start; gap: 16px; }
-  .direction h3 { margin: 0; font-size: clamp(1.2rem, 8.8cqw, 2rem); }
-  .direction p { margin-bottom: 2px; }
-  .direction-note { grid-column: 2; }
+  .direction-index { grid-column: 1; grid-row: 1; margin: 7px 0 0; }
+  .direction-index::after { display: none; }
+  .direction h3 { grid-column: 2; grid-row: 1; margin: 0; font-size: clamp(1.2rem, 8.8cqw, 2rem); }
+  .direction-visual { grid-column: 1 / -1; grid-row: 2; margin-block: 10px 8px; }
+  .direction p { grid-column: 1 / -1; grid-row: 3; margin-bottom: 2px; }
+  .direction-note { grid-column: 1 / -1; grid-row: 4; }
   .work-heading { display: block; }
   .work-heading .text-link { margin-top: 22px; }
   .work-row { grid-template-columns: minmax(0, 1fr) 22px; gap: 9px; padding-block: 23px; }
