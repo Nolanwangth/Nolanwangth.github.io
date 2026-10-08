@@ -87,7 +87,7 @@ window.siteContent = {
     "contact.intro": "I'm happy to talk research, explore a project idea, or just swap notes on something interesting.",
     "experience.karaceing": "KA-RaceIng",
     "experience.auo": "AUO",
-    "experience.kia": "Dongfeng Yueda Kia",
+    "experience.kia": "KIA",
     "experience.keyence": "KEYENCE",
     "experience.xcmg": "XCMG Group"
   },
@@ -178,7 +178,7 @@ window.siteContent = {
     "contact.intro": "有感兴趣的研究问题、想一起做的项目，或者只是想分享一个想法，都欢迎来信。",
     "experience.karaceing": "KA-RaceIng",
     "experience.auo": "友达光电",
-    "experience.kia": "东风悦达起亚",
+    "experience.kia": "KIA",
     "experience.keyence": "基恩士",
     "experience.xcmg": "徐工集团"
   }
