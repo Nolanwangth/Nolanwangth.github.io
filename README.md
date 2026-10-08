@@ -20,9 +20,7 @@ Open http://127.0.0.1:4173/. No dependencies or build step are required.
 - `style.css`: complete dark and light palettes, responsive layout, and CSS motion
 - `preferences.js`: restore the saved theme before the stylesheet loads
 - `script.js`: theme/language controls, local preference storage, scroll reveals, and the animated canvas
-- `assets/tianhong-wang.jpg`: unchanged owner-supplied portrait, displayed at its original aspect ratio through a transparent CSS alpha mask
-- `assets/portrait-mask.svg`: self-contained alpha mask extracted with built-in imagegen, with a small inward edge adjustment to remove white JPEG fringe; only its transparency is used. The visible face, hair, clothing, and color pixels come from the original JPEG. A muted CSS backdrop changes with the theme.
-- `assets/portrait-edit.json`: background extraction prompt and rendering provenance
+- `assets/tianhong-wang.jpg`: owner-supplied portrait, displayed at its original aspect ratio
 - `assets/direction-robotics-cutout.webp`, `assets/direction-ai-cutout.webp`, `assets/direction-systems-cutout.webp`: transparent conceptual artwork for the three homepage directions, with CSS lighting adapted to each theme; project rows remain text only
 - `assets/artwork-prompts.json`: prompts used with the built-in imagegen tool; website images are optimized as WebP
 

@@ -1,8 +1,0 @@
-{
-  "method": "Built-in imagegen with transparent_background=true; optimized as WebP with lossless alpha",
-  "input": "tianhong-wang.jpg",
-  "mask": "portrait-mask.svg",
-  "use": "Only generated alpha is used as a CSS mask. Visible photographic RGB pixels always come from unchanged original JPEG.",
-  "prompt": "Use case: background-extraction. Edit target: the provided original portrait photograph of Wang Tianhong. Primary request: remove ONLY the plain white background to produce an exact faithful transparent cutout for a personal academic website. Preserve the original photographed person precisely, pixel appearance and identity, exact face, facial proportions, skin texture and tone, hair, expression, black shirt, collar, pose, shoulders, original crop and all original visible body. No beautification, no retouching, no new lighting, no reinterpretation, no illustration, no resynthesis of facial features, no invented hair or clothing. Keep the same portrait canvas aspect ratio and original subject placement with its top breathing space. Fine hair strands and clean anti-aliased edges must be retained without white halo. The removed white area must be genuine alpha transparency, including the space above the head and around the shoulders. Do not add a floor, shadow, frame, vignette, text, watermark, or substitute background. Only remove the background.",
-  "edge_cleanup": "Self-contained SVG uses the extracted alpha with a 6px inward edge adjustment and 0.4px alpha softening, removing white JPEG fringe at website display size. Original RGB is unchanged."
-}
