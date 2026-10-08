@@ -50,11 +50,8 @@ h2 em { color: var(--accent); font-weight: 400; }
 /* A compact, persistent navigation makes both preferences available everywhere. */
 .header { position: sticky; top: 0; z-index: 20; background: var(--header); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
 .header-inner { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); font: 600 1.12rem/1.1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: -.045em; white-space: nowrap; }
-.brand-symbol { display: block; width: 32px; height: 32px; flex: 0 0 auto; }
-.brand-node { fill: var(--accent); }
-.brand-identity { font-size: .6rem; font-weight: 400; letter-spacing: .025em; color: var(--muted); padding-left: 10px; border-left: 1px solid var(--line); }
-.brand:hover .brand-node { fill: var(--text); }
+.brand { font: italic 600 2rem/1 Georgia, serif; letter-spacing: -.07em; }
+.brand span { color: var(--accent); }
 .header nav { display: flex; gap: 27px; margin-left: auto; margin-right: 34px; }
 .header nav a { color: var(--muted); font-size: .8rem; }
 .header nav a:hover { color: var(--text); }
@@ -150,7 +147,7 @@ h2 em { color: var(--accent); font-weight: 400; }
 .contact-list a > span:last-child { grid-column: 2; grid-row: 1 / 3; align-self: center; color: var(--accent); }
 .contact-list a:hover strong { color: var(--accent); }
 .footer { display: flex; align-items: center; gap: 30px; border-top: 1px solid var(--line); padding-block: 30px; font-size: .74rem; color: var(--muted); }
-.footer .brand { color: var(--text); font-size: 1rem; margin-right: auto; }
+.footer .brand { color: var(--text); font-size: 1.7rem; margin-right: auto; }
 .footer a:hover { color: var(--accent); }
 
 /* Independent direction pages use the same palette and a quieter opening. */
@@ -211,8 +208,7 @@ html.motion-paused { scroll-behavior: auto; }
   html { scroll-padding-top: 140px; }
   .wrap { width: calc(100% - 40px); }
   .header-inner { flex-wrap: wrap; gap: 12px; padding-block: 16px 12px; min-height: 0; }
-  .header .brand { font-size: 1rem; gap: 8px; }
-  .header .brand-symbol { width: 26px; height: 26px; }
+  .header .brand { font-size: 1.75rem; }
   .preferences { margin-left: auto; }
   .header nav { order: 3; width: 100%; margin: 0; justify-content: space-between; gap: 12px; }
   .header nav a { font-size: .74rem; }
@@ -266,10 +262,4 @@ html.motion-paused { scroll-behavior: auto; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .motion-ready .reveal { opacity: 1; transform: none; }
-}
-
-@media (max-width: 360px) {
-  .header .brand { font-size: .9rem; gap: 6px; }
-  .header .brand-symbol { width: 22px; height: 22px; }
-  .header .brand-identity { font-size: .5rem; padding-left: 8px; }
 }

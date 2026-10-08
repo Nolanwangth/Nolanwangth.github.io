@@ -42,13 +42,6 @@ University marks are attributed to their institutions. KA-RaceIng links to its g
 
 School marks sit directly on the page background. The KIT dark variant preserves the original SVG geometry and green accent with light lettering; the CUMT mark is clipped to its circular outline.
 
-## Personal identity
+## Names
 
-- Chinese name: 王天虹
-- Formal English name: Wang Tianhong
-- Public name: Nolan; bilingual identity: Nolan / 王天虹 and Nolan / Wang Tianhong
-- Symbol: a continuous N stroke with one copper connection point; the same geometry is used in the header, footer, standalone mark, and favicon.
-- `assets/nolan-mark.svg`: transparent vector symbol, with light/dark system colors.
-- `assets/nolan-favicon.svg`: square icon on the brand's dark background.
-
-Chinese portrait labels, copyright, page titles, accessible brand labels, and descriptions use 王天虹. English formal-name labels use Wang Tianhong. The short English introduction uses Nolan. The N symbol is a local design draft pending a final identity direction.
+Chinese: 王天虹. Pinyin: Wang Tianhong. English name: Nolan. The website retains its original `nolan.` wordmark.

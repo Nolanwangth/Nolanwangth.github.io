@@ -84,8 +84,7 @@ window.siteContent = {
     "brand.pageName": "Nolan",
     "portrait.name": "Wang Tianhong",
     "footer.copyright": "© 2026 Wang Tianhong",
-    "meta.title": "Nolan — Robotics, AI & Systems",
-    "brand.identity": "Wang Tianhong"
+    "meta.title": "Nolan · Wang Tianhong — Robotics, AI & Systems"
   },
   "zh": {
     "skip": "跳到正文",
@@ -171,7 +170,6 @@ window.siteContent = {
     "brand.pageName": "王天虹",
     "portrait.name": "王天虹",
     "footer.copyright": "© 2026 王天虹",
-    "meta.title": "王天虹 · Nolan — 机器人、AI 与企业系统",
-    "brand.identity": "王天虹"
+    "meta.title": "王天虹 · Nolan — 机器人、AI 与企业系统"
   }
 };
