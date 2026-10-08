@@ -22,6 +22,7 @@ function renderControls() {
   languageButton.textContent = language === 'en' ? '中文' : 'EN';
   languageButton.lang = language === 'en' ? 'zh-CN' : 'en';
   languageButton.setAttribute('aria-label', language === 'en' ? '切换到中文' : 'Switch to English');
+  if (!motionButton) return;
   motionButton.disabled = reducedMotion.matches;
   motionButton.setAttribute('aria-pressed', String(isPaused()));
   motionButton.textContent = reducedMotion.matches
@@ -47,6 +48,7 @@ function applyLanguage() {
     });
   }
   document.title = language === 'zh' ? 'Nolan · Tianhong Wang — 机器人、AI 与企业系统' : 'Nolan · Tianhong Wang — Robotics, AI & Systems';
+  if (root.dataset.page) document.title = `${copy[`directions.${root.dataset.page}`]} · Nolan`;
   document.querySelector('meta[name="description"]').content = language === 'zh'
     ? 'Tianhong Wang（Nolan），西湖大学人工智能方向博士生。探索机器人、人工智能与企业系统。'
     : 'Tianhong Wang (Nolan), AI PhD student at Westlake University. Exploring robotics, artificial intelligence, and enterprise systems.';
@@ -68,7 +70,7 @@ function syncMotionPreference() {
   renderControls();
   window.dispatchEvent(new Event('motionchange'));
 }
-motionButton.addEventListener('click', () => { userPaused = !userPaused; syncMotionPreference(); });
+motionButton?.addEventListener('click', () => { userPaused = !userPaused; syncMotionPreference(); });
 reducedMotion.addEventListener('change', syncMotionPreference);
 applyLanguage();
 applyTheme();
@@ -103,7 +105,7 @@ updateProgress();
 
 // A lightweight line field, drawn at 30 fps and stopped offscreen or on request.
 const canvas = document.querySelector('.hero-field');
-const context = canvas.getContext('2d');
+const context = canvas?.getContext('2d');
 if (context) {
   const hero = document.querySelector('.hero');
   let width = 0, height = 0, frame = 0, lastDraw = 0;

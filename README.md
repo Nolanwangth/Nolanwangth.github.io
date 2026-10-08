@@ -2,7 +2,7 @@
 
 A bilingual portfolio for Tianhong Wang (Nolan), hosted at https://nolanwangth.github.io/.
 
-The page introduces robotics, artificial intelligence, and enterprise systems before presenting six selected projects as names and keywords. Education, KA-RaceIng experience, and two email contacts follow.
+The page introduces robotics, artificial intelligence, and enterprise systems before presenting six selected projects as names and keywords. Each direction links to its own page with related projects and keywords. Education, KA-RaceIng experience, and two email contacts follow.
 
 ## Preview
 
@@ -14,7 +14,8 @@ Open http://127.0.0.1:4173/. No dependencies or build step are required.
 
 ## Editing
 
-- `index.html`: structure, links, and English fallback content
+- `index.html`: homepage structure, links, and English fallback content
+- `robotics.html`, `ai.html`, `systems.html`: independent direction pages
 - `content.js`: English and Chinese copy, including accessible labels; keep English copy aligned with the HTML fallback
 - `style.css`: complete dark and light palettes, responsive layout, and CSS motion
 - `preferences.js`: restore the saved theme before the stylesheet loads
